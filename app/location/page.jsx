@@ -15,7 +15,7 @@ const Location = () => {
   const successCallback = (positon) => {
     const { accuracy, latitude, longitude, altitude, heading, speed } =
       positon.coords;
-
+    console.log( "print values", accuracy, latitude, longitude, altitude, heading, speed);
     setLocation((prev) => {
       return {
         ...prev,
